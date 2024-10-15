@@ -21,6 +21,7 @@
         h2 {
             text-align: center;
             margin: 20px 0;
+            color: orange;
         }
 
         /* Header */
@@ -73,35 +74,46 @@
             margin: 5px;
         }
 
-        /* Slider */
-        .slider {
-            margin-top: 60px;
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
-            position: relative;
-            max-height: 400px;
-        }
+        
+		        .hero{
+		    height: 95vh;
+		    width: 100%;
+		   
+		    background-position: center;
+		    background-size: cover;
+		}
 
-        .slides {
-            display: flex;
-            width: 300%;
-            animation: slide 12s infinite;
-        }
+		h1{
+		    color: orange;
+		    font-size: 75px;
+		    margin: 20px 0px 20px;
+			}
+					
+					.content{
+		    position: absolute;
+		    top: 40%;
+		    left: 8%;
+		    transform: translateY(-50%);
+		}
 
-        .slides img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-        }
-
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            33% { transform: translateX(-100%); }
-            66% { transform: translateX(-200%); }
-            100% { transform: translateX(0); }
-        }
-
+		.button{
+		position: absolute;
+		background-color: #213032;
+		color: #fff;
+		text-decoration: none;
+		border: 2px solid black;
+		font-weight: bold;
+		padding: 13px 30px;
+		transform: .4s;
+		border-radius: 20px;
+		}
+		
+		.button:hover{
+		    background-color: #97a2a3;
+		    color: #213032;
+		    border: 2px solid black;
+		    cursor: pointer;
+		}
         /* Features Section */
         .features {
             padding: 40px;
@@ -233,7 +245,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo">MoviePortal</div>
+            <div class="logo">MOVIE HUB</div>
             <ul class="nav-links">
                 <li><a href="home.jsp">Home</a></li>
                 <li><a href="#">Movies</a></li>
@@ -251,13 +263,16 @@
         </nav>
     </header>
 
-    <section class="slider">
-        <div class="slides">
-            <img src="https://wallpapercave.com/dwp2x/wp10615933.jpg" alt="Movie 1">
-            <img src="https://wallpapercave.com/dwp2x/wp10615933.jpg" alt="Movie 2">
-            <img src="https://wallpapercave.com/dwp2x/wp10615933.jpg" alt="TV Show 1">
+   <div class="hero">
+        <div class="content">
+           <h1>Welcome to MOVIE HUB</h1>           
+            <h2>where the excitement of discovering your next favorite film meets the ease of a seamless browsing experience!</h2>
+            
+            <br>
+            <br>
+            <div class="button">Click Hear!</div>
         </div>
-    </section>
+    </div>
 
     <section class="features">
         <h2>Our Features</h2>
@@ -318,6 +333,40 @@
             <a href="#">Twitter</a>
         </div>
     </footer>
+    
+    <script>
+    let hero = document.querySelector(".hero");
+
+    const images = [
+        {
+            img:"url(images/4.jpg)",
+        },
+        {
+            img:"url(images/2.jpg)",
+        },
+        {
+            img:"url(images/3.jpg)",
+        },
+    ]
+
+    let curr = 0;
+
+    function slider(){
+        let item = images[curr];
+        if(curr === 2){
+            curr = 0;
+        }
+        else{
+            curr++
+        }
+        hero.style.backgroundImage = item.img;
+    }
+
+    let slideInt;
+
+    slideInt = setInterval(slider, 3000);
+    
+    </script>
 
 </body>
 </html>

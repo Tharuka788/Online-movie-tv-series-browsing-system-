@@ -13,10 +13,16 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            background-color: #f9f9f9;
-        }
+        	 background-image: url('images/desola-lanre-ologun-zYgV-NGZtlA-unsplash.jpg');
+        background-size: cover;          /* Ensures the image covers the entire page */
+        background-repeat: no-repeat;    /* Prevents the image from repeating */
+        background-position: center;     /* Centers the image on the page */
+        background-attachment: fixed;    /* Keeps the background fixed while scrolling */
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
 
         h2 {
             text-align: center;
@@ -75,11 +81,13 @@
         /* Login Container Styling */
         .login-container {
             max-width: 500px;
-            margin: 80px auto; /* Increased margin to avoid overlap with navbar */
+          	margin: 80px 0 0 500px; /* Increased margin to avoid overlap with navbar */
             padding: 20px;
-            background-color: #fff;
+
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            
+            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
         }
 
         h1 {
@@ -112,10 +120,13 @@
             cursor: pointer;
             font-size: 1em;
             transition: background-color 0.3s;
+            width: 200px;
+            
         }
 
         input[type="submit"]:hover {
             background-color: #357abd;
+            
         }
 
         /* Footer Styling */
@@ -133,10 +144,11 @@
 </head>
 <body>
 
+
     <!-- Navbar -->
     <header>
         <nav>
-            <div class="logo">Movie & TV Series Portal</div>
+            <div class="logo">MOVIE HUB</div>
             <ul class="nav-links">
                 <li><a href="home.jsp">Home</a></li>
                 <li><a href="#">Movies</a></li>
@@ -153,7 +165,7 @@
             </div>
         </nav>
     </header>
-<br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
     <!-- Login Form Container -->
     <div class="login-container">
         <h1>Login</h1>
@@ -164,10 +176,7 @@
         </form>
     </div>
 <br><br><br><br><br><br><br><br>
-    <!-- Footer -->
-    <div class="footer">
-        &copy; 2024 Movie & TV Series Portal. All rights reserved.
-    </div>
+   
 
 </body>
 </html>

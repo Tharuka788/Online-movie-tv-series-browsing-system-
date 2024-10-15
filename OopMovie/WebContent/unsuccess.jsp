@@ -71,7 +71,7 @@
 
     <div class="navbar">
         <div class="logo">
-            <a href="#">Movie & TV Series Portal</a>
+            <a href="#">MOVIE HUB</a>
         </div>
         <div class="nav-links">
             <a href="#">Home</a>

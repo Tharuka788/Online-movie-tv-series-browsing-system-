@@ -27,6 +27,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Arial', sans-serif;
+    background-color: #a6acaf ;
 }
 
 .main-content {
@@ -83,7 +84,7 @@ body {
         h1.capitalize {
             text-align: center;
             margin: 20px 0;
-            color: #333;
+            color: white;
         }
 
         .payForm {
@@ -186,7 +187,7 @@ input[type="checkbox"] {
 <body>
     <header>
         <nav>
-            <div class="logo">Movie & TV Series Portal</div>
+            <div class="logo">MOVIE HUB</div>
             <ul class="nav-links">
                 <li><a href="home.jsp">Home</a></li>
                 <li><a href="#">Movies</a></li>

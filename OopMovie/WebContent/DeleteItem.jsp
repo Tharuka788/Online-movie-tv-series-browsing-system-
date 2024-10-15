@@ -197,7 +197,7 @@
 
     <header>
         <nav>
-            <div class="logo">Movie & TV Series Portal</div>
+            <div class="logo">MOVIE HUB</div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Movies</a></li>

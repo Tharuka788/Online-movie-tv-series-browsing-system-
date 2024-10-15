@@ -13,10 +13,16 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            background-color: #f9f9f9;
-        }
+            background-image: url('images/AdobeStock_845107561_Preview.jpeg');
+        background-size: cover;          /* Ensures the image covers the entire page */
+        background-repeat: no-repeat;    /* Prevents the image from repeating */
+        background-position: center;     /* Centers the image on the page */
+        background-attachment: fixed;    /* Keeps the background fixed while scrolling */
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
 
         h2 {
             text-align: center;
@@ -79,6 +85,8 @@
             background-color: #fff;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            
+            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
         }
 
         h1 {
@@ -161,7 +169,7 @@
 
     <header>
         <nav>
-            <div class="logo">Movie & TV Series Portal</div>
+            <div class="logo">MOVIE HUB</div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Movies</a></li>
@@ -201,7 +209,7 @@
             <input type="submit" name="submit" value="Create Customer">
         </form>
     </div>
-
+    <br>
     <!-- Footer -->
     <div class="footer">
         &copy; 2024 Movie & TV Series Portal. All rights reserved.
