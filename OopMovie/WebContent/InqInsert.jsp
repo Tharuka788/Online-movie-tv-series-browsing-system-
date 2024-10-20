@@ -76,6 +76,15 @@
 
 
         /* Container Styling */
+        
+         input[type="text"], input[type="password"], input[type="number"] {
+            padding: 12px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            width: calc(100% - 26px); /* Adjusted for padding and border */
+        }
         .container {
             margin-top: 80px;
             max-width: 800px;
@@ -177,7 +186,7 @@
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                        <input type="number" class="form-control" id="phone" name="phone" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>

@@ -107,7 +107,7 @@
             color: #333;
         }
 
-        input[type="text"], input[type="password"] {
+        input[type="text"], input[type="password"], input[type="number"] {
             padding: 12px;
             margin: 5px 0 15px;
             border: 1px solid #ccc;
@@ -198,7 +198,7 @@
             <input type="text" id="email" name="email" required>
 
             <label for="phone">Phone Number</label>
-            <input type="text" id="phone" name="phone" required>
+            <input type="number" id="phone" name="phone" required>
 
             <label for="uid">User Name</label>
             <input type="text" id="uid" name="uid" required>
